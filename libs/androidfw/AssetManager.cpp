@@ -326,7 +326,16 @@ bool AssetManager::addDefaultAssets()
     String8 path(root);
     path.appendPath(kSystemAssets);
 
-    return addAssetPath(path, NULL, false /* appAsLib */, true /* isSystemAsset */);
+    bool ret = addAssetPath(path, NULL, false /* appAsLib */, true /* isSystemAsset */);
+    if (ret) {
+        String8 pathLineage(root);
+        pathLineage.appendPath(kLineageAssets);
+
+        if (!addAssetPath(pathLineage, NULL, false /* appAsLib */, false /* isSystemAsset */)) {
+            ALOGE("Failed to load Lineage SDK resources!");
+        }
+    }
+    return ret;
 }
 
 bool AssetManager::addExtraAssets()

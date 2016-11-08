@@ -81,6 +81,9 @@ public class PowerUI extends SystemUI {
     // For filtering ACTION_POWER_DISCONNECTED on boot
     private boolean mIgnoredFirstPowerBroadcast;
 
+    // For filtering ACTION_POWER_DISCONNECTED on boot
+    private boolean mIgnoredFirstPowerBroadcast;
+
     public void start() {
         mPowerManager = (PowerManager) mContext.getSystemService(Context.POWER_SERVICE);
         mHardwarePropertiesManager = (HardwarePropertiesManager)

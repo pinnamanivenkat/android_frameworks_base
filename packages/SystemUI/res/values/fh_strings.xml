@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Copyright (C) 2017 FireHound ROMs
+<!--  Copyright (C) 2017 FireHound
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -23,5 +23,8 @@
     <!-- Partial Screenshot -->
     <string name="screenshot_abort_title">No screenshot taken</string>
     <string name="screenshot_abort_text">Operation aborted.</string>
+
+    <!-- Statusbar icon -->
+    <string name="statusbar_items_title">Statusbar icon</string>
 
 </resources>

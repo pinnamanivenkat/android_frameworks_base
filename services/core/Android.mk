@@ -33,6 +33,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 
 LOCAL_JAVA_LIBRARIES += org.lineageos.platform.internal
 
+LOCAL_JAVA_LIBRARIES += org.lineageos.platform.internal
+
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
     LOCAL_JACK_ENABLED := incremental

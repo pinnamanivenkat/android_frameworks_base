@@ -4008,6 +4008,12 @@ public final class Settings {
         public static final String VOLUME_DIALOG_STROKE_DASH_GAP = "volume_dialog_stroke_dash_gap";
 
         /**
+         * Whether to enable scrolling in the small quick settings
+         * @hide
+         */
+        public static final String QS_QUICKBAR_SCROLL_ENABLED = "qs_quickbar_scroll_enabled";
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
@@ -4171,6 +4177,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(STATUS_BAR_QUICK_QS_PULLDOWN);
             PRIVATE_SETTINGS.add(VOLUME_BUTTON_MUSIC_CONTROL);
             PRIVATE_SETTINGS.add(LOCKSCREEN_MEDIA_METADATA);
+            PRIVATE_SETTINGS.add(QS_QUICKBAR_SCROLL_ENABLED);
         }
 
         /**
